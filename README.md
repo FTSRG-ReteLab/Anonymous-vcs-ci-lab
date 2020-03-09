@@ -4,6 +4,10 @@ This is a sample text to complete the first task.
 You can make **bold** and *italic* characters and also 
 `code`
 
+# 3. task
+
+We created the Description branch to check how branches work on github.
+
 # Train Speed Controller
 
 This is a sample application for the verification laboratory.
