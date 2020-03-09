@@ -1,11 +1,9 @@
-package hu.bme.mit.train.system;
+package hu.bme.mit.train.sensor;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import static org.mockito.Mockito.*;
 
-public class TrainUserTest {
+public class TrainSensorTest2 {
 
     @Before
     public void before() {
