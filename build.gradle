@@ -7,6 +7,8 @@ subprojects {
     }
 
   dependencies {
-    compile group: 'com.google.guava', name: 'guava', version: '28-2.jre'
+    // https://mvnrepository.com/artifact/com.google.guava/guava
+    compile group: 'com.google.guava', name: 'guava', version: '28.2-jre'
+
   }
 }
