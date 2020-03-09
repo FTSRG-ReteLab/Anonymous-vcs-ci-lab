@@ -3,13 +3,10 @@ subprojects {
 
   repositories {
     jcenter()
-  }
+    mavenCentral()
+    }
 
-  repositories {
-    url "http://search.maven.org/"
-  }
-  
   dependencies {
-    compile 'com.google.guava'
+    compile group: 'com.google.guava', name: 'guava', version: '28-2.jre'
   }
 }
