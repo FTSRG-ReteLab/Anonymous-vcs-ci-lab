@@ -1,11 +1,3 @@
 dependencies {
     compile project(':train-interfaces')
 }
-
-repositories {
-    url "http://search.maven.org/"
-}
-
-dependencies {
-    compile 'com.google.guava'
-}
