@@ -3,9 +3,12 @@ subprojects {
 
   repositories {
     jcenter()
-    url "http://search.maven.org/"
   }
 
+  repositories {
+    url "http://search.maven.org/"
+  }
+  
   dependencies {
     compile 'com.google.guava'
   }
