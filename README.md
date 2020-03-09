@@ -11,6 +11,7 @@ We created the Description branch to check how branches work on github.
 # 4. task
 
 Creating merge conflict.
+My branch is superior
 
 # Train Speed Controller
 
