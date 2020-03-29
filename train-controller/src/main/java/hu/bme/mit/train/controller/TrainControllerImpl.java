@@ -13,6 +13,19 @@ public class TrainControllerImpl implements TrainController {
 	private int speedLimit = 0;
 	public Table<String, String, Long> tachograph = HashBasedTable.create();
 
+	//timerInterval sets the interval for the timer (in ms)
+	private static int timerInterval = 100;
+	private Timer timer = new Timer();
+
+	//timer is scheduled in the constructor
+	public TrainControllerImpl() {
+		timer.schedule(new TimerTask() {
+			public void run() {
+				followSpeed();
+			}
+		}, timerInterval, timerInterval);
+	}
+
 	public void recordData() {
 		String cTime = new Date().toString();
 		tachograph.put(cTime, "Time", new Date().getTime());
