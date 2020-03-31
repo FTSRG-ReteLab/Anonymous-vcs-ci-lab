@@ -12,6 +12,7 @@ public class TrainControllerImpl implements TrainController {
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
 	private Timer timer = new Timer();
+	private  int delayTime = 100, periodTime = 1000;
 	public Table<String, String, Long> tachograph = HashBasedTable.create();
 
 	public TrainControllerImpl(){
@@ -20,7 +21,7 @@ public class TrainControllerImpl implements TrainController {
 				public void run() {
 					followSpeed();
 				}
-			},100, 1000);
+			},delayTime, periodTime);
 	}
 
 	public void recordData() {
