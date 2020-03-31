@@ -11,7 +11,17 @@ public class TrainControllerImpl implements TrainController {
 	private int step = 0;
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
+	private Timer timer = new Timer();
 	public Table<String, String, Long> tachograph = HashBasedTable.create();
+
+	public TrainControllerImpl(){
+			timer.schedule(new TimerTask() {
+				@Override
+				public void run() {
+					followSpeed();
+				}
+			},100, 1000);
+	}
 
 	public void recordData() {
 		String cTime = new Date().toString();
